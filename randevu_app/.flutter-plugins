@@ -1,0 +1,27 @@
+# This is a generated file; do not edit or check into version control.
+cloud_firestore=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/cloud_firestore-4.17.5/
+cloud_firestore_web=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.12.5/
+firebase_core=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/firebase_core-2.32.0/
+firebase_core_web=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/firebase_core_web-2.22.0/
+flutter_keyboard_visibility=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility-5.4.1/
+flutter_keyboard_visibility_linux=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_linux-1.0.0/
+flutter_keyboard_visibility_macos=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_macos-1.0.0/
+flutter_keyboard_visibility_web=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_web-2.0.0/
+flutter_keyboard_visibility_windows=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/flutter_keyboard_visibility_windows-1.0.0/
+geolocator=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/geolocator-10.1.1/
+geolocator_android=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/geolocator_android-4.6.2/
+geolocator_apple=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/geolocator_apple-2.3.13/
+geolocator_web=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/geolocator_web-2.2.1/
+geolocator_windows=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/geolocator_windows-0.2.5/
+path_provider=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/path_provider-2.1.5/
+path_provider_android=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/path_provider_android-2.2.17/
+path_provider_foundation=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.1/
+path_provider_linux=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0/
+url_launcher=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/url_launcher-6.3.1/
+url_launcher_android=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/
+url_launcher_ios=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/url_launcher_ios-6.3.3/
+url_launcher_linux=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/url_launcher_linux-3.2.1/
+url_launcher_macos=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.2/
+url_launcher_web=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/url_launcher_web-2.4.1/
+url_launcher_windows=/Users/mstfnsckr/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.4/

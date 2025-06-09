@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "irxBPpH2StNHNuchpWBEJ6KHU00EI1iHQOevKTj3rqs=",
+  "Source": "randevu_app_api",
+  "BasePath": "_content/randevu_app_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "randevu_app_api/wwwroot",
+      "Source": "randevu_app_api",
+      "ContentRoot": "/Users/mstfnsckr/Desktop/KKÜ Projelerim/Randevu App P1/randevu_app_api/wwwroot/",
+      "BasePath": "_content/randevu_app_api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

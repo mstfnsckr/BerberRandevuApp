@@ -1,0 +1,6 @@
+@randevu_app_api_HostAddress = http://localhost:5242
+
+GET {{randevu_app_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
