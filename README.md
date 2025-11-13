@@ -1,10 +1,11 @@
+markdown
 # Randevu App 💈
 
 ---
 
 ### Proje Açıklaması
 
-Bu proje, berber ve kuaför salonları için **tam yığın (full-stack)** bir randevu yönetim uygulamasıdır.
+Bu proje, berber ve kuaför salonları için **tam yığın (full-stack)** bir randevu yönetim uygulamasıdır. Uygulama, işletmelerin müşteri kayıtlarını, sundukları hizmetleri, çalışanlarını ve randevu süreçlerini etkin bir şekilde yönetmelerini sağlamak üzere geliştirilmiştir.
 
 ---
 
@@ -28,29 +29,48 @@ Bu proje, berber ve kuaför salonları için **tam yığın (full-stack)** bir r
 
 ---
 
-## 📋 KURULUM REHBERİ
+## 🚀 Kurulum ve Çalıştırma
 
-Aşağıdaki butona tıklayarak tüm kurulum komutlarını tek seferde kopyalayabilirsiniz:
-
+### 1. Projeyi Klonlama
 ```bash
-# 1. Projeyi klonlama
 git clone https://github.com/mstfnsckr/BerberRandevuApp
 cd BerberRandevuApp
+2. Backend (API) Kurulumu
 
-# 2. Backend kurulumu
+bash
 cd randevu_app_api
-# - appsettings.json'daki connection string'i güncelleyin
-# - Paketleri restore edin: dotnet restore
-# - Migrations'ı çalıştırın: dotnet ef database update
-# - API'yi başlatın: dotnet run
+# appsettings.json dosyasındaki connection string'i güncelleyin
+# Paketleri restore edin: dotnet restore
+# Veritabanını oluşturun: dotnet ef database update
+# API'yi çalıştırın: dotnet run
+3. Frontend (Flutter) Kurulumu
 
-# 3. Frontend kurulumu  
+bash
 cd ../randevu_app
-# - Flutter paketlerini yükleyin: flutter pub get
-# - Uygulamayı çalıştırın: flutter run
+# Bağımlılıkları yükleyin: flutter pub get
+# Uygulamayı çalıştırın: flutter run
+🔧 API Base URL Ayarı
 
-# API Base URL ayarı (lib/core/constants/api_constants.dart)
+Flutter uygulamasında lib/core/constants/api_constants.dart dosyasını aşağıdaki gibi düzenleyin:
+
+dart
 class ApiConstants {
-  static const String baseUrl = 'http://10.0.2.2:5242'; // Android emülatör
-  // static const String baseUrl = 'https://localhost:7128'; // iOS simülatör
+  // Geliştirme ortamı (Android emülatör)
+  static const String baseUrl = 'http://10.0.2.2:5242';
+
+  // iOS simülatör için
+  // static const String baseUrl = 'http://localhost:5242';
+  
+  // Üretim ortamı
+  // static const String baseUrl = 'https://api.sirketiniz.com';
 }
+🌐 API Erişim Bilgileri
+
+HTTP URL: http://localhost:5242
+HTTPS URL: https://localhost:7128
+Swagger UI: http://localhost:5242/swagger
+📱 Ağ Yapılandırması
+
+Android Emülatör: http://10.0.2.2:5242
+iOS Simülatör: http://localhost:5242
+Fiziksel Cihaz: Bilgisayarınızın IP adresi (ör: http://192.168.1.35:5242)
