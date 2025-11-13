@@ -4,18 +4,17 @@
 
 ### Proje Açıklaması
 
-Bu proje, berber ve kuaför salonları için **tam yığın (full-stack)** bir randevu yönetim uygulamasıdır. Uygulama, işletmelerin müşteri kayıtlarını, sundukları hizmetleri, çalışanlarını ve randevu süreçlerini etkin bir şekilde yönetmelerini sağlamak üzere geliştirilmiştir.
+Bu proje, berber ve kuaför salonları için **tam yığın (full-stack)** bir randevu yönetim uygulamasıdır.
 
 ---
 
 ### ✨ Temel Özellikler
 
-* **Randevu Yönetimi:** Randevu oluşturma, görüntüleme, silme ve durum güncelleme.
-* **Çalışan Takibi:** Belirli tarihli randevuları çalışan bazında listeleme.
-* **Kullanıcı Takibi:** Kullanıcıya ait gelecek randevuları görme.
-* **API Desteği:** ASP.NET Core Web API ile backend sağlanır.
-* **API Dokümantasyonu:** Swagger desteği kullanılır.
-* **CORS:** Geliştirme amaçlı tüm originlere izin verilmiştir.
+* **Randevu Yönetimi:** Yeni randevu oluşturma, mevcut randevuları görüntüleme, silme ve durumlarını güncelleme
+* **Çalışan Takibi:** Belirlenen tarihlerdeki randevuları çalışan bazında listeleme
+* **Kullanıcı Takibi:** Kullanıcının geçmiş ve gelecek randevularını görüntüleme
+* **API Desteği:** **ASP.NET Core Web API** ile güçlü backend
+* **API Dokümantasyonu:** **Swagger** dokümantasyon desteği
 
 ---
 
@@ -25,25 +24,33 @@ Bu proje, berber ve kuaför salonları için **tam yığın (full-stack)** bir r
 | :--- | :--- | :--- |
 | **Frontend / Mobil** | Flutter | Dart |
 | **Backend / API** | ASP.NET Core | C# |
-| **Veritabanı** | SQL Server | Entity Framework Core (EF Core) |
+| **Veritabanı** | SQL Server | Entity Framework Core |
 
 ---
 
-### 📂 Proje Yapısı
+## 📋 KURULUM REHBERİ
 
-Proje, iki ana klasörden oluşmaktadır:
-
-* `randevu_app`: **Flutter** mobil uygulaması (kaynak: lib/).
-* `randevu_app_api`: **ASP.NET Core Web API** (Controllers, Models, Data, Migrations).
-
----
-
-### 🚀 Kurulum ve Çalıştırma
-
-### 1. Klonlama İşlemleri
-
-Projeyi yerel makinenize klonlayın:
+Aşağıdaki butona tıklayarak tüm kurulum komutlarını tek seferde kopyalayabilirsiniz:
 
 ```bash
-git clone [https://github.com/mstfnsckr/BerberRandevuApp](https://github.com/mstfnsckr/BerberRandevuApp)
+# 1. Projeyi klonlama
+git clone https://github.com/mstfnsckr/BerberRandevuApp
 cd BerberRandevuApp
+
+# 2. Backend kurulumu
+cd randevu_app_api
+# - appsettings.json'daki connection string'i güncelleyin
+# - Paketleri restore edin: dotnet restore
+# - Migrations'ı çalıştırın: dotnet ef database update
+# - API'yi başlatın: dotnet run
+
+# 3. Frontend kurulumu  
+cd ../randevu_app
+# - Flutter paketlerini yükleyin: flutter pub get
+# - Uygulamayı çalıştırın: flutter run
+
+# API Base URL ayarı (lib/core/constants/api_constants.dart)
+class ApiConstants {
+  static const String baseUrl = 'http://10.0.2.2:5242'; // Android emülatör
+  // static const String baseUrl = 'https://localhost:7128'; // iOS simülatör
+}
