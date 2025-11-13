@@ -48,8 +48,8 @@ setup: |
 
 flutter_api_base_url: |
   Flutter uygulamasındaki API çağrıları için baseUrl ayarı:
-  Örnek constants.dart dosyası:
 
+api_constants_example: |
   ```dart
   class ApiConstants {
     // Geliştirme ortamı
@@ -59,9 +59,11 @@ flutter_api_base_url: |
     // static const String baseUrl = 'https://api.sirketiniz.com';
   }
 
-### Klonlama
-Projeyi yerel makinenize klonlayın:
+clone_instructions: |
+  ### Klonlama
+  Projeyi yerel makinenize klonlayın:
 
-```bash
-git clone [https://github.com/mstfnsckr/BerberRandevuApp](https://github.com/mstfnsckr/BerberRandevuApp)
-cd BerberRandevuApp
+  ```bash
+  git clone https://github.com/mstfnsckr/BerberRandevuApp
+  cd BerberRandevuApp
+
