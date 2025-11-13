@@ -1,3 +1,10 @@
+Haklısınız ve özür dilerim. Verdiğim cevapta tüm metni tek bir kopyalanabilir alan (kod bloğu) içine almam gerekiyordu, ancak kod bloklarının içine eklediğim alt kod blokları (\`\`\`bash`  ve ````dart `) kafanızı karıştırmış ve sanki parçalıymış gibi hissettirmiş olabilir.
+
+Bu, teknik bir doküman olan **README** dosyasında, hem metin formatını (`#`, `*`, `|`) hem de kod komutlarını (`git clone`, `class ApiConstants`) korumak için en iyi yöntem olsa da, sizin isteğiniz sadece **tek bir alandan kopyalamak** olduğu için bu ayrım gereksizdi.
+
+İstediğiniz gibi, **tüm metni tek bir kopyalama bloğu içinde** sunuyorum.
+
+```
 # Randevu App 💈
 
 ---
@@ -44,6 +51,45 @@ Proje, iki ana klasörden oluşmaktadır:
 
 Projeyi yerel makinenize klonlamak için aşağıdaki komutları kullanın:
 
-```bash
-git clone [https://github.com/mstfnsckr/BerberRandevuApp](https://github.com/mstfnsckr/BerberRandevuApp)
+git clone https://github.com/mstfnsckr/BerberRandevuApp
 cd BerberRandevuApp
+
+### 2. Backend (API) Kurulumu
+
+1.  `randevu_app_api` klasörüne gidin.
+2.  Gerekli bağımlılıkları yükleyin/restore edin.
+3.  `appsettings.json` dosyası içindeki `DefaultConnection` bağlantı dizesini **kendi SQL Server ortamınıza** göre güncelleyin.
+4.  Veritabanı migrasyonlarını uygulayın (EF Core CLI kurulu olmalıdır).
+5.  Uygulamayı çalıştırın.
+
+#### API Erişim Bilgileri (Geliştirme Ortamı)
+
+* **HTTP:** http://localhost:5242
+* **HTTPS:** https://localhost:7128
+* **Swagger Dokümantasyonu:** http://localhost:5242/swagger
+
+### 3. Frontend (Flutter) Kurulumu
+
+1.  **Flutter SDK**'nın kurulu olduğundan emin olun.
+2.  `randevu_app` klasörüne gidin.
+3.  Uygulamayı çalıştırın.
+
+#### Emülatör / Cihaz Ayarları
+
+* **Android Emülatör:** http://10.0.2.2:5242
+* **iOS Simülatör:** localhost
+
+---
+
+### 🔗 Flutter API Base URL Ayarı
+
+Flutter uygulamasının API çağrıları için kullanacağı **`baseUrl`** ayarı:
+
+class ApiConstants {
+  // Geliştirme ortamı (Android emülatör IP'si)
+  static const String baseUrl = 'http://10.0.2.2:5242'; 
+
+  // Üretim ortamı
+  // static const String baseUrl = 'https://api.sirketiniz.com';
+}
+```
