@@ -1,69 +1,49 @@
-title: "Randevu App 💈"
+# Randevu App 💈
 
-description: |
-  Bu proje, berber ve kuaför randevu yönetimi için geliştirilmiş
-  tam yığın (full‑stack) bir uygulamadır.
-  Uygulama, berber dükkanları için müşteri kayıt, hizmet, çalışan
-  ve randevu yönetimini sağlar.
+---
 
-features: |
-  - Randevu Yönetimi: Randevu oluşturma, görüntüleme, silme ve durum güncelleme
-  - Çalışan Takibi: Belirli tarihli randevuları çalışan bazında listeleme
-  - Kullanıcı Takibi: Kullanıcıya ait gelecek randevuları görme
-  - API Desteği: ASP.NET Core Web API ile backend sağlanır
-  - Swagger Desteği: API dokümantasyonu için Swagger kullanılır
-  - CORS: Geliştirme amaçlı tüm originlere izin verilmiştir
+### Proje Açıklaması
 
-technologies: |
-  - Frontend / Mobil: Flutter, Dart
-  - Backend / API: ASP.NET Core, C#
-  - Veritabanı: SQL Server (EF Core)
+Bu proje, berber ve kuaför salonları için **tam yığın (full-stack)** bir randevu yönetim uygulamasıdır. Uygulama, işletmelerin müşteri kayıtlarını, sundukları hizmetleri, çalışanlarını ve randevu süreçlerini etkin bir şekilde yönetmelerini sağlamak üzere geliştirilmiştir.
 
-project_structure: |
-  randevu_app         # Flutter mobil uygulaması (kaynak: lib/)
-  randevu_app_api     # ASP.NET Core Web API (Controllers, Models, Data, Migrations)
+---
 
-setup: |
-  Backend (API):
-    1. randevu_app_api klasörüne gidin
-    2. Bağımlılıkları yükleyin / restore edin
-    3. appsettings.json içindeki DefaultConnection bağlantı dizesini kendi SQL Server ortamınıza göre güncelleyin
-    4. Veritabanı migrasyonlarını uygulayın (EF Core CLI yüklü ise)
-    5. Uygulamayı çalıştırın
+### ✨ Temel Özellikler
 
-    API, geliştirme ortamında şu URL’lerde dinler:
-      - HTTP: http://localhost:5242
-      - HTTPS: https://localhost:7128
+* **Randevu Yönetimi:** Yeni randevu oluşturma, mevcut randevuları görüntüleme, silme ve durumlarını güncelleme yeteneği.
+* **Çalışan Takibi:** Belirlenen tarihlerdeki randevuları çalışan bazında kolayca listeleme imkanı.
+* **Kullanıcı Takibi:** Kullanıcının geçmiş ve gelecek randevularını görüntüleyebilmesi.
+* **API Desteği:** Güçlü bir arka plan (backend) için **ASP.NET Core Web API** kullanılır.
+* **API Dokümantasyonu:** API uç noktaları için **Swagger** dokümantasyon desteği mevcuttur.
+* **CORS:** Geliştirme kolaylığı için tüm **origin**'lere izin verilmiştir.
 
-    Swagger dokümantasyonu: http://localhost:5242/swagger
+---
 
-  Frontend (Flutter):
-    1. Flutter SDK kurulu olduğundan emin olun
-    2. randevu_app klasörüne gidin
-    3. Uygulamayı çalıştırın
+### 💻 Teknolojiler
 
-    Emülatör / cihaz ayarları:
-      - Android emülatör: http://10.0.2.2:5242
-      - iOS simülatör: localhost çalışır
+| Bileşen | Teknoloji | Dil/Çerçeve |
+| :--- | :--- | :--- |
+| **Frontend / Mobil** | Flutter | Dart |
+| **Backend / API** | ASP.NET Core | C# |
+| **Veritabanı** | SQL Server | Entity Framework Core (EF Core) |
 
-flutter_api_base_url: |
-  Flutter uygulamasındaki API çağrıları için baseUrl ayarı:
+---
 
-api_constants_example: |
-  ```dart
-  class ApiConstants {
-    // Geliştirme ortamı
-    static const String baseUrl = 'http://10.0.2.2:5242';
+### 📂 Proje Yapısı
 
-    // Üretim ortamı
-    // static const String baseUrl = 'https://api.sirketiniz.com';
-  }
+Proje, iki ana klasörden oluşmaktadır:
 
-clone_instructions: |
-  ### Klonlama
-  Projeyi yerel makinenize klonlayın:
+* `randevu_app`: **Flutter** mobil uygulaması (Kaynak kodu `lib/` klasörü altındadır).
+* `randevu_app_api`: **ASP.NET Core Web API** projesi (Controller'lar, Modeller, Veri Katmanı ve Migrasyonlar burada yer alır).
 
-  ```bash
-  git clone https://github.com/mstfnsckr/BerberRandevuApp
-  cd BerberRandevuApp
+---
 
+### 🚀 Kurulum ve Çalıştırma
+
+### 1. Klonlama İşlemleri
+
+Projeyi yerel makinenize klonlamak için aşağıdaki komutları kullanın:
+
+```bash
+git clone [https://github.com/mstfnsckr/BerberRandevuApp](https://github.com/mstfnsckr/BerberRandevuApp)
+cd BerberRandevuApp
